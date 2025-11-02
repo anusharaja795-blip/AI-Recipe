@@ -1,0 +1,9 @@
+.recipe_page{
+    width:800px;
+    height: 900px;
+    border-style: ridge;
+    background-color: #FFFCB8;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
