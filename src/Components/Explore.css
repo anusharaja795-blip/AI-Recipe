@@ -5,13 +5,19 @@
   align-items:flex-end;
   
 }
+.left_place
+{
+  display: flex;
+  flex-direction: row;
+  
+}
 h3{
   color: orange;
 }
 p{
   font-size: large;
 }
-*{
+/* *{
   margin-left:20px;
   margin-right: 20px;
-}
+} */

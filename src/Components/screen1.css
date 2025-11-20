@@ -1,3 +1,4 @@
+
 .container{
 background-color:#9112BC;
 height:50px;
@@ -6,80 +7,81 @@ display: inline-flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;
- width: 100%;
+width: 100%;
 
 }
 .container li,a{
     display: inline-block;
     padding-right: 70px;
     text-align: center;
-    font-size: larger;
+    font-size:20px;
     color: white;
+    
 }
-.recipes{
+.recipes, .adult {
   position: relative;
   cursor: pointer;
+}
+
+.dropdown, .Dropdown1 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(190, 129, 190);
+  min-width: 500px;
+  border-radius: 0 0 10px 10px;
+  z-index: 1000;
+  flex-direction: column;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Show dropdown on hover of parent */
+.recipes:hover .dropdown,
+.adult:hover.Dropdown1 {
+  display: flex !important;
+  transition: transform 0.5s;
+   align-items: flex-start; 
+  justify-content: left;
  
 }
-.dropdown{
-    
-    display: none;
-    position:absolute;
-    color:balck;
-   
-  }
-  .adult{
-    position: relative;
-  cursor: pointer;
-  
-  }
-  .Dropdown1{
-    display: none;
-    position:absolute;
-    color:balck;
 
-  }
-  .adult:hover .Dropdown1{
-    display: block;
-    color: black;
-    background-color:rgb(190, 129, 190);
-    display: flex;
-    flex-direction: column;
-    position:relative;
-    }
+/* Optional: Hover effect for dropdown items */
+.dropdown a, .Dropdown1 a {
+
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown a:hover, .Dropdown1 a:hover {
+  background-color: #e6aae6;
+  display: block;
+  
+}
+.dropdown-content a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+}
 .cards{
     display: flex;
     flex-direction: row;
     gap:10px; 
      flex-wrap: wrap;
 }
-.recipes:hover .dropdown{
-    display: block;
-    color: black;
-    background-color: rgb(190, 129, 190);
-       display: flex;
-    flex-direction: column;
-    position:relative;
-    }
-/* .recipes {
-  transition: transform 0.2s;
-}
-.recipes:hover {
-  transform: scale(1.1);
-} */
-
-
 .card
 {
-    width:400px;
-    height: 500px;
-    border-style: ridge;
+    width:365px;
+    height: 530px;
     background-color: #FFFCB8;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .food_Image{
-    width:360px;
+    width:320px;
     height:300px;
     border-radius: 10px;
     display: flex;
@@ -102,64 +104,88 @@ h1{
   font-size: large;
   border-color: #006A67;
 }
-/* .input{
-    margin-left: 20px;
-} */
-/* .dropdown{
-  
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 130px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-}
-.recipes{
-    position: relative;
-}
-.recipes:hover .dropdown {
-  display: block;} */
-
-  /* .dropdown {
-  position: relative;
-}
-
-.dropbtn {
-  background-color: #4CAF50;
-  color: rgb(226, 124, 124);
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+.explore{
   text-decoration: none;
-  display: block;
+  }
+
+.box{
+  padding: 10px;
+  width: 100%;
+  height: 1300px;
+  background-color:#eedaee;
+  border-radius: 10px;
+}  
+.box h2{
+  text-align: center;
+  color: green;
+
+}
+p{
+  font-size: 16px;
+}
+.heading{
+  font-size: 20px;
+  color: #9c27b0;
+}
+.meal_planner1{
+  width: 570px;
+  height: 550px;
+  border-radius: 10px;
+  /* float:left; */
+  }
+
+.meal_planner2{
+  width: 570px;
+  height: 650px;
+  border-radius: 10px;
+  float: right;
+   /* display: flex; */
+  /* justify-content: center; */
+  /* flex-direction: row;
+  align-items:flex-start; */
+  /* float: left; */
+  }
+
+.meal_planner3{
+  width: 570px;
+  height: 550px;
+  border-radius: 10px;
+  /* max-width: 50%; */
+  
 }
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1
+.meal_planner4{
+  width: 570px;
+  height: 550px;
+   border-radius: 10px;
+   float:right;
+  
+}
+.meal_planner5{
+  width: 650px;
+  height: 550px;
+  border-radius: 10px;
+  /* float:left; */
+}
+.align_right{
+  float: right;
+  width:50%;
+ 
+}
+.align_left{
+  float: left;
+  width:50%;
 }
 
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-} */
+.row{
+  display: flex;
+  flex-direction: row;
+  }
+  .column{
+  display: flex;
+  flex-direction: column;
+  }
+  .row-reverse{
+  display: flex;
+  flex-direction: row-reverse;
+  }

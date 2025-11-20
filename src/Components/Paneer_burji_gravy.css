@@ -1,0 +1,40 @@
+
+ .detail_card {
+    width: 600px;
+    height: 530px;
+    background-color: #FFFCB8;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* <-- This centers children horizontally */
+    justify-content: flex-start; 
+    float: left;
+  /* Or use center for vertical centering */
+}
+
+.detail_image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+      
+    /* Remove flex styles here */
+}
+.video{
+    margin-top: 125px;
+    
+}
+.box1{
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  background-color:#eedaee;
+  border-radius: 10px;
+}
+.box1 h3{
+    color: red;
+}
+.box1 h2{
+  text-align: center;
+  color: green;
+}

@@ -15,6 +15,11 @@ import Aloo_jeera from "./Aloo_jeera.jsx";
 import Jerk_chicken from "./Jerk_chicken.jsx";
 import Kids from "./Kids.jsx"
 import Onion_pakoda from "./Onion_pakoda.jsx";
+import Oats_chilla from "./Oats_chillla.jsx";
+import Snack from "./Snack.jsx";
+import Brown_Rice_Moong_Dal_Khichdi from "./Brown_Rice _Moong_Dal_Khichdi.jsx";
+import Chocolate_Banana_Nut_Shake from "./Chocolate_Banana_Nut_Shake.jsx";
+
 function App()
 {
   return(
@@ -37,6 +42,12 @@ function App()
                           <Route path="/Onion_pakoda" element={<Onion_pakoda/>}/>
                           <Route path="/Wheat_flour_biscuit" element={<Wheat_flour_biscuit/>}/>
                           <Route path="/Kids" element={<Kids/>}/>
+                          <Route path="/Oats_chilla" element={<Oats_chilla/>}/>
+                          <Route path="/Snack" element={<Snack/>}/>
+                          <Route psth="/Brown_Rice_Moong_Dal_Khichdi" element={<Brown_Rice_Moong_Dal_Khichdi/>}/>
+                          <Route path="/Chocolate_Banana_Nut_Shake" element={<Chocolate_Banana_Nut_Shake/>}/>
+                          <Route path="/Paneer_fry" element={<Paneer_fry/>}/>
+                          
                  
    </Routes>
    </BrowserRouter>
@@ -45,5 +56,5 @@ function App()
   //  <Screen3/>
   //  <Screen4/> */}
     </>
-  )};
+  )}
   export default App
